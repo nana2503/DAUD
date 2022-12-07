@@ -1,0 +1,138 @@
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
+:root {
+  --green: #189a46;
+  --bg-color: #fff;
+  --slider-bg-color: #0c0c0c;
+  --about-us: #f53626;
+  --black-title: #000c04;
+  --text: #696969;
+  --border-radius: 10px;
+  --bg-light: rgba(147, 107, 232, 0.05);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Jost", sans-serif;
+}
+/* Start header */
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+    align-items: center;
+    background-color: var(--bg-color);
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+  .header .container .logo h1 {
+    color: var(--green);
+    font-size: 36px;
+    font-weight: bolder;
+  }
+  .header .container .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .container .navigation > div {
+    padding: 0 10px;
+  }
+  .header .container .navigation div a {
+    text-decoration: none;
+    color: black;
+    font-size: 19.2px;
+    display: block;
+    position: relative;
+  }
+  .header .container .navigation div a:hover {
+    color: var(--green);
+    transition: all 0.4s linear;
+  }
+  .header .container .navigation div a::after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--green);
+    position: absolute;
+    transition: all 0.4s linear;
+  }
+  .header .container .navigation div a:hover::after {
+    width: 100%;
+  }
+  .fa-angle-down {
+    margin-top: 9px;
+    padding-right: 5px;
+    color: #999;
+    font-size: 10px;
+  }
+  .header-fixed-space-height {
+    margin-top: 90px;
+  }
+  /* End header */
+  /* Start breadcrumb */
+  .breadcumb {
+    height: 330px;
+    background-image: url(./img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: grid;
+    align-items: center;
+    padding: 1em 0; 
+  }
+  .breadcumb h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+  }
+  /* End breadcrumb */
+  /* Start Footer */
+.footer-title {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .footer-28 {
+    background-color: #111;
+  }
+  .footer-28 ul li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  .footer-28 ul li p {
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 28px;
+  }
+  .footer-28 ul li a {
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 28px;
+  }
+  .footer-28 ul.social-icon li{
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  /* End Footer */
