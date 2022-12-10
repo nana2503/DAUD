@@ -23,7 +23,7 @@ body {
   font-family: "Jost", sans-serif;
 }
 /* Start header */
-header {
+/* header {
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -79,12 +79,204 @@ header .container .navigation div a:hover::after {
   padding-right: 5px;
   color: #999;
   font-size: 10px;
+} */
+/* .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  text-decoration: none;
+}
+
+.topnav .icon {
+  display: none;
+} */
+
+/* @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
+#site-header {
+  background-color: var(--bg-color);
+}
+.main-header {
+  padding: 0px;
+  transition: all 0.4s ease 0s;
+  height: 90px;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+  color: var(--bg-color);
+}
+.navbar {
+  margin: 0;
+  justify-content: unset;
+}
+.navbar a.navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--green);
+  font-family: "Jost", sans-serif;
+}
+.navbar-collaspe {
+  display: flex !important;
+}
+ul.navbar-nav {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  font-family: "Jost", sans-serif;
+  padding-top: 20px;
+}
+ul.navbar-nav li.nav-item{
+  padding: 0 12px;
+  transition: all 0.5s ease;
+  position: relative;
+
+}
+ul.navbar-nav li.nav-item .nav-link{
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  padding: 14px 0;
+  font-size: 1.5em;
+  font-weight: 400;
+  position: relative;
+  color: var(--black-title);
+}
+ul.navbar-nav li.nav-item .nav-link:hover{
+  color: var(--green);
+  transition: all 0.4s linear;
+}
+ul.navbar-nav li.nav-item .nav-link::after{
+  content: "";
+  width: 0px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--green);
+  position: absolute;
+  transition: all 0.4s linear;
+}
+ul.navbar-nav li.nav-item .nav-link:hover::after{
+  width: 100%;
+}
+a.icon {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+  li.nav-item{display: none;}
+  .navbar {
+    margin: 0;
+    justify-content: unset !important;
+  }
+  .navbar a.icon{
+    float: right;
+    display: block;
+  }
+  #site-header .container {
+    position: absolute;
+    left: 10.5%;
+    top: 8%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #site-header.response {
+    height: 375px;
+  }
+  #site-header .container.response {
+    position: absolute;
+    left: 10.5%;
+    top: 8%;
+  }
+  ul.navbar-nav.response {
+    position: absolute;
+    top: 41px;
+    left: 0;
+  }
+  a.icon{
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    padding: 10px 15px;
+    background-color: #116e32;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+  }
+  
+  a.icon:link {
+    color: #fff;
+  }
+  ul.navbar-nav.response li.nav-item{
+    /* display: contents; */
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 576px) {
+  #site-header .container {
+    position: absolute;
+    left: 3.5%;
+    top: 8%;
+  }
+  #site-header .container.response {
+    position: absolute;
+    left: 3.5%;
+    top: 8%;
+  }
+  a.icon{
+    position: absolute;
+    right: 72px;
+    top: 12px;
+    padding: 10px 15px;
+    background-color: #116e32;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+  }
 }
 /* End header */
 /* Start Slider */
-.slider {
-  margin-top: -60px;
-}
 .slider .carousel-indicators .dot {
   background-color: var(--green);
   margin: 0 10px;
@@ -715,47 +907,56 @@ header .container .navigation div a:hover::after {
 .video-popup .history-info .popup-with-zoom-animation .video-play-icon > i {
   color: var(--green);
 }
-.video-popup .history-info #small-dialog{
-    max-width: 750px;
-    margin: 40px auto;
-    position: relative;
+.video-popup .history-info #small-dialog {
+  max-width: 750px;
+  margin: 40px auto;
+  position: relative;
 }
-.video-popup .history-info .mfp-hide{
-    display: none !important;
+.video-popup .history-info .mfp-hide {
+  display: none !important;
 }
 /* End video popup */
 /* Start feedback */
 .client {
-    font-family: 'Jost', sans-serif;
-    background-color: var(--bg-light);
+  font-family: "Jost", sans-serif;
+  background-color: var(--bg-light);
 }
 .client .customer-feedback .feedback-block .heading-text .sub-title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 2em;
-    letter-spacing: 1px;
-    color: var(--about-us);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: var(--about-us);
 }
 .client .customer-feedback .feedback-block .heading-text .hny-title {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 40px;
-    color: var(--black-title);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  color: var(--black-title);
 }
-.client .customer-feedback .feedback-width{
-    max-width: 1050px;
-    margin: auto;
+.client .customer-feedback .feedback-width {
+  max-width: 1050px;
+  margin: auto;
 }
-.client .customer-feedback .feedback-width .out-stage-outer .owl-stage{
-  transform: translate3d(0, 0 ,0);
+.client .customer-feedback .feedback-width .out-stage-outer .owl-stage {
+  transform: translate3d(0, 0, 0);
   transition: all 0.25s ease 0s;
   width: 3210;
 }
-.client .customer-feedback .feedback-width .out-stage-outer .owl-stage .owl-item{
+.client
+  .customer-feedback
+  .feedback-width
+  .out-stage-outer
+  .owl-stage
+  .owl-item {
   width: 515px;
   margin-right: 20px;
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content {
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content {
   display: block;
   position: relative;
   padding: 40px 30px;
@@ -763,44 +964,91 @@ header .container .navigation div a:hover::after {
   box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
   border-radius: var(--border-radius);
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content blockquote{
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content
+  blockquote {
   border-left: none;
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content blockquote p{
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content
+  blockquote
+  p {
   font-size: 1.2em;
   line-height: 28px;
   color: var(--text);
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content .testimonial-des {
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content
+  .testimonial-des {
   display: flex;
   text-align: center;
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content .testimonial-des .des-image {
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content
+  .testimonial-des
+  .des-image {
   width: 70px;
   height: 70px;
   display: inline-block;
   overflow: hidden;
   background-color: var(--bg-color);
   border-radius: 50%;
-  
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content .testimonial-des img {
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content
+  .testimonial-des
+  img {
   width: 100%;
   min-height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content .testimonial-des .people {
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content
+  .testimonial-des
+  .people {
   margin: 0;
   margin-left: 20px;
   text-align: left;
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content .testimonial-des .people h3{
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content
+  .testimonial-des
+  .people
+  h3 {
   margin: 0;
   font-weight: 600;
   font-size: 20px;
 }
-.client .customer-feedback .feedback-block .feedback-width .testimonial-content .testimonial-des .people .identity{
+.client
+  .customer-feedback
+  .feedback-block
+  .feedback-width
+  .testimonial-content
+  .testimonial-des
+  .people
+  .identity {
   color: #777;
   font-size: 17px;
   margin-bottom: 0;
@@ -811,17 +1059,22 @@ header .container .navigation div a:hover::after {
 /* Start Subcribe */
 .sub .container .main-content .subcribe .header-section .hny-title {
   font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-    text-transform: capitalize;
-    color: var(--black-title);
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: var(--black-title);
 }
 .sub .container .main-content .subcribe .header-section p {
   font-size: 1.2em;
   line-height: 28px;
   color: var(--text);
 }
-.sub .container .main-content .subcribe .subcribe-field-main input[type="email"] {
+.sub
+  .container
+  .main-content
+  .subcribe
+  .subcribe-field-main
+  input[type="email"] {
   font-size: 16px;
   color: var(--text);
   border-radius: var(--border-radius);
@@ -843,10 +1096,10 @@ header .container .navigation div a:hover::after {
   border-color: var(--green);
 }
 .sub .container .main-content .subcribe .subcribe-field-main button:hover {
-  -webkit-transition: 0.5s all ;
-  background-color: #116E32;
+  -webkit-transition: 0.5s all;
+  background-color: #116e32;
 }
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .col-lg-3 {
     margin-left: 20px;
   }
@@ -879,7 +1132,7 @@ header .container .navigation div a:hover::after {
   color: var(--text);
   line-height: 28px;
 }
-.footer-28 ul.social-icon li{
+.footer-28 ul.social-icon li {
   display: inline-block;
   margin-right: 15px;
   margin-bottom: 0;
