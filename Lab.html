@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styleLab.css" />
+    <link rel="icon" href="./img/favicon-32x32.png" />
+    <title>Poochcare Animal</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- End required meta tags -->
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- End bootstrap CSS -->
+  </head>
+  <body>
+    <header id="site-header" class="main-header fixed-top nav-fixed">
+      <div class="container" id="ctn">
+        <div class="navbar navbar-expand-lg">
+          <h1><a href="./index.html" class="navbar-brand">Pooch Care</a></h1>
+          <div
+            class="navbar-collapse"
+            style="display: contents"
+            id="navbar-content"
+          >
+            <ul id="primary-menu" class="navbar-nav ml-auto">
+              <li
+                id="menu-item-26"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-26 nav-item active"
+              >
+                <a
+                  href="./index.html"
+                  class="nav-link active"
+                  style="color: #189a46"
+                  >Home</a
+                >
+              </li>
+              <li
+                id="menu-item-25"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25 nav-item"
+              >
+                <a href="./about.html" class="nav-link">About</a>
+              </li>
+              <li
+                id="menu-item-24"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"
+              >
+                <a href="./service.html" class="nav-link">Services</a>
+              </li>
+              <li
+                id="menu-item-23"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23 nav-item"
+              >
+                <a href="./gallery.html" class="nav-link">Gallery</a>
+              </li>
+              <li
+                id="menu-item-24"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"
+              >
+                <a href="./Lab.html" class="nav-link">Practicle Lab</a>
+              </li>
+            </ul>
+            <div id="icon-response">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header-fixed-space-height" style="margin-top: 90px"></div>
+    <!-- End header -->
+    <!-- Start breadcumb -->
+    <section class="breadcumb text-center">
+      <div class="breadcumb-bg breadcumb-bg-about py-sm-5 py-4">
+        <div class="container py-2">
+          <h2 class="title aboutBanner">All Lab Lessons Learned</h2>
+        </div>
+      </div>
+    </section>
+    <!-- End breadcumb -->
+    <!-- Start practicle lab -->
+    <section class="practicle-lab py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 1</h5>
+                <p class="card-text">This lesson contain: 1 excercise</p>
+                <button type="button" class="btn btn-primary">
+                  <a href="./Mấy bài lab/lab1/lab1_vidu2.html" target="_blank"
+                    >Click here to show the lesson</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 2</h5>
+                <p class="card-text">This lesson contain: 2 excercise</p>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    List of lab
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab2/lab2_bai1.html"
+                      target="_blank"
+                      >Click here to show the lesson 1</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab2/lab2_bai2.html"
+                      target="_blank"
+                      >Click here to show the lesson 2</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 3</h5>
+                <p class="card-text">This lesson contain: 1 excercise</p>
+                <button type="button" class="btn btn-primary">
+                  <a href="./Mấy bài lab/lab3/lab2_bai1.html" target="_blank"
+                    >Click here to show the lesson</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 4</h5>
+                <p class="card-text">This lesson contain: 2 excercise</p>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    List of lab
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab4/lab4_bai1.html"
+                      target="_blank"
+                      >Click here to show the lesson 1</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab4/lab4_bai2.html"
+                      target="_blank"
+                      >Click here to show the lesson 2</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 5</h5>
+                <p class="card-text">
+                  This lesson contain: 1 excercise 1 example
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    List of lab
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab5/lab5_bai1.html"
+                      target="_blank"
+                      >Click here to show the lesson</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab5/lab5_vidu1.html"
+                      target="_blank"
+                      >Click here to show the example</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 5.1</h5>
+                <p class="card-text">
+                  This lesson contain: 2 excercise 1 example
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    List of lab
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab5.1/lab5_bai1.html"
+                      target="_blank"
+                      >Click here to show the lesson 1</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab5.1/lab5_bai2.html"
+                      target="_blank"
+                      >Click here to show the lesson 2</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab5.1/lab5_vidu1.html"
+                      target="_blank"
+                      >Click here to show the example</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 6</h5>
+                <p class="card-text">This lesson contain: 1 project</p>
+                <button type="button" class="btn btn-primary">
+                  <a href="./Mấy bài lab/Na/index.html" target="_blank"
+                    >Click here to show the project</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 7</h5>
+                <p class="card-text">
+                  This lesson contain: 5 exercise 2 example
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    List of lab
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab7/lab7_bai1.html"
+                      target="_blank"
+                      >Click here to show the lesson 1</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab7/lab7_bai2.html"
+                      target="_blank"
+                      >Click here to show the lesson 2</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab7/lab7_bai3.html"
+                      target="_blank"
+                      >Click here to show the lesson 3</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab7/lab7_bai4.html"
+                      target="_blank"
+                      >Click here to show the lesson 4</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab7/lab7_bai5_mau.html"
+                      target="_blank"
+                      >Click here to show the lesson 5</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab7/lab7_vidu1.html"
+                      target="_blank"
+                      >Click here to show the example 1</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab7/lab7_vidu2.html"
+                      target="_blank"
+                      >Click here to show the example 2</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lab 8</h5>
+                <p class="card-text">
+                  This lesson contain: 4 exercise 5 example
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    List of lab
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_bai1.html"
+                      target="_blank"
+                      >Click here to show the lesson 1</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_bai2.html"
+                      target="_blank"
+                      >Click here to show the lesson 2</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_bai3.html"
+                      target="_blank"
+                      >Click here to show the lesson 3</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_bai4.html"
+                      target="_blank"
+                      >Click here to show the lesson 4</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_vidu1.html"
+                      target="_blank"
+                      >Click here to show the example 1</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_vidu2.html"
+                      target="_blank"
+                      >Click here to show the example 2</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_vidu3.html"
+                      target="_blank"
+                      >Click here to show the example 3</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_vidu4.html"
+                      target="_blank"
+                      >Click here to show the example 4</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./Mấy bài lab/lab8/lab8_vidu5.html"
+                      target="_blank"
+                      >Click here to show the example 5</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End practicle lab -->
+    <!-- Start footer -->
+    <section class="footer">
+      <footer class="footer-28">
+        <div class="footer-bg-layer">
+          <div class="container py-lg-3">
+            <div class="footer-top d-flex">
+              <div class="footer-list col-lg-6 mt-5 col-md-5">
+                <h6 class="footer-title">Contact information</h6>
+                <ul>
+                  <li>
+                    <p><strong>Name</strong> : Bùi Ngọc Na</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Student ID </strong>
+                      : DH52001092
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Student Class </strong>
+                      : D20_TH03
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Email</strong>
+                      <a
+                        href="mailto:
+                            buina5555@gmail.com"
+                      >
+                        : buina5555@gmail.com
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+                <div class="footerSocial mt-3">
+                  <ul class="social-icon">
+                    <li class="facebook">
+                      <a
+                        href="https://www.facebook.com/w3layouts/"
+                        title="Facebook"
+                      >
+                        <span class="fab fa-facebook" aria-hidden="true"></span>
+                      </a>
+                    </li>
+
+                    <li class="twitter">
+                      <a href="https://twitter.com/W3layouts" title="Twitter">
+                        <span class="fab fa-twitter" aria-hidden="true"></span>
+                      </a>
+                    </li>
+
+                    <li class="dribbble">
+                      <a href="https://dribbble.com/w3layouts" title="Dribbble">
+                        <span class="fab fa-dribbble" aria-hidden="true"></span>
+                      </a>
+                    </li>
+
+                    <li class="google">
+                      <a
+                        href="https://myaccount.google.com/intro/profile"
+                        title="Google"
+                      >
+                        <span class="fab fa-google" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="list-product">
+                  <div class="col-sm-4 col-6 footer-list-product mt-5">
+                    <div id="archive">
+                      <h6 class="footer-title">Archives</h6>
+                      <ul>
+                        <li>
+                          <a href="https://wp.w3layouts.com/poochcare/2020/12/"
+                            >December 2022</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-6 footer-list-product mt-5">
+                    <div id="Categories">
+                      <h6 class="footer-title">Categories</h6>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://wp.w3layouts.com/poochcare/category/animals/"
+                            >Animals</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://wp.w3layouts.com/poochcare/category/pets/"
+                            >Pets</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://wp.w3layouts.com/poochcare/category/pets-care/"
+                            >Pets Care</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://wp.w3layouts.com/poochcare/category/uncategorized/"
+                            >Uncategorized</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 footer-list-product mt-5">
+                    <div id="meta">
+                      <h6 class="footer-title">Meta</h6>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://wp.w3layouts.com/poochcare/wp-login.php"
+                            >Log in</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://wp.w3layouts.com/poochcare/feed/"
+                            >Entries feed</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://wp.w3layouts.com/poochcare/comments/feed/"
+                            >Comments feed</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://wordpress.org/">WordPress.org</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- End footer -->
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("primary-menu");
+      var y = document.getElementById("site-header");
+      var z = document.getElementById("ctn");
+      if (y.className === "main-header fixed-top nav-fixed") {
+        y.className += " response";
+      } else {
+        y.className = "main-header fixed-top nav-fixed";
+      }
+      if (x.className === "navbar-nav ml-auto") {
+        x.className += " response";
+      } else {
+        x.className = "navbar-nav ml-auto";
+      }
+      if (z.className === "container") {
+        z.className += " response";
+      } else {
+        z.className = "container";
+      }
+    }
+  </script>
+  <script>
+    function ScrollToTop() {
+      window.scroll({ top: 0, left: 0, behavior: "smooth" });
+    }
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+</html>

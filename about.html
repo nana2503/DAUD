@@ -44,23 +44,67 @@
   </head>
   <body>
     <!-- Start header -->
-    <section class="header">
-      <div class="container">
-        <div class="logo">
-          <h1>Pooch Care</h1>
+    <header id="site-header" class="main-header fixed-top nav-fixed">
+      <div class="container" id="ctn">
+        <div class="navbar navbar-expand-lg">
+          <h1><a href="./index.html" class="navbar-brand">Pooch Care</a></h1>
+          <div
+            class="navbar-collapse"
+            style="display: contents"
+            id="navbar-content"
+          >
+            <ul id="primary-menu" class="navbar-nav ml-auto">
+              <li
+                id="menu-item-26"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-26 nav-item active"
+              >
+                <a
+                  href="./index.html"
+                  class="nav-link active"
+                  style="color: #189a46"
+                  >Home</a
+                >
+              </li>
+              <li
+                id="menu-item-25"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25 nav-item"
+              >
+                <a href="./about.html" class="nav-link">About</a>
+              </li>
+              <li
+                id="menu-item-24"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"
+              >
+                <a href="./service.html" class="nav-link">Services</a>
+              </li>
+              <li
+                id="menu-item-23"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23 nav-item"
+              >
+                <a href="./gallery.html" class="nav-link">Gallery</a>
+              </li>
+              <li
+                id="menu-item-24"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"
+              >
+                <a href="./service.html" class="nav-link">Practicle Lab</a>
+              </li>
+              
+            </ul>
+            <div id="icon-response">
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction()"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+          </div>
         </div>
-        <!-- Start navigation bar -->
-        <div class="navigation">
-          <div><a style="color: #189a46" href="./index.html">Home</a></div>
-          <div><a href="./about.html">About</a></div>
-          <div><a href="./service.html">Service</a></div>
-          <div><a href="./gallery.html">Gallery</a></div>
-          <div><a href="#">Practicle LAB</a></div>
-        </div>
-        <!-- End navigation bar -->
       </div>
-    </section>
-    <div class="header-fixed-space-height"></div>
+    </header>
+    <div class="header-fixed-space-height" style="margin-top: 90px;"></div>
     <!-- End header -->
     <!-- Start breadcumb -->
     <section class="breadcumb text-center">
@@ -316,6 +360,28 @@
     ></script>
     <!-- Code injected by live-server -->
   </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("primary-menu");
+      var y = document.getElementById("site-header");
+      var z = document.getElementById("ctn");
+      if (y.className === "main-header fixed-top nav-fixed") {
+        y.className += " response";
+      } else {
+        y.className = "main-header fixed-top nav-fixed";
+      }
+      if (x.className === "navbar-nav ml-auto") {
+        x.className += " response";
+      } else {
+        x.className = "navbar-nav ml-auto";
+      }
+      if (z.className === "container") {
+        z.className += " response";
+      } else {
+        z.className = "container";
+      }
+    }
+  </script>
   <script>
     function ScrollToTop() {
       window.scroll({ top: 0, left: 0, behavior: "smooth" });
